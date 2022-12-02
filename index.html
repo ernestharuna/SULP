@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+   <title>Scrum Universe</title>
+</head>
+
+<body>
+   <style>
+      .item {
+         width: 50vw;
+         margin: 0 auto;
+         display: block;
+      }
+
+      .container {
+         margin-top: 50px;
+      }
+
+      #busy {
+         position: relative;
+         animation: hovering 4s ease infinite;
+      }
+
+      @keyframes hovering {
+         0% {
+            top: 0px;
+         }
+
+         50% {
+            top: -15px;
+         }
+
+         100% {
+            top: 0px;
+         }
+      }
+
+      @media screen and (max-width: 760px) {
+         .container {
+            margin-top: 50%;
+         }
+
+         .item {
+            width: 80vw;
+            margin: 0 auto;
+            display: block;
+         }
+      }
+   </style>
+
+   <div class="container">
+      <header>
+         <img id="logo" class="item" src="assets/Scrumuniverse logo.png" alt="ScrumUniverse logo">
+      </header>
+      <main>
+         <img id="busy" class="item" src="assets/busy logo.png" alt="In Progress">
+      </main>
+   </div>
+</body>
+
+</html>
