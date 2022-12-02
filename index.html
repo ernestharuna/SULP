@@ -17,26 +17,30 @@
          display: block;
       }
 
-      .container {
-         margin-top: 50px;
-      }
-
-      #busy {
+      #busy.item {
+         width: 40vw;
+         margin: 0 auto;
+         margin-top: 3%;
+         display: block;
          position: relative;
          animation: hovering 4s ease infinite;
       }
 
+      .container {
+         margin-top: 50px;
+      }
+
       @keyframes hovering {
          0% {
-            top: 0px;
+            transform: scale(1, 1);
          }
 
          50% {
-            top: -15px;
+            transform: scale(1.1, 1.1);
          }
 
          100% {
-            top: 0px;
+            transform: scale(1, 1);
          }
       }
 
@@ -50,6 +54,16 @@
             margin: 0 auto;
             display: block;
          }
+
+         #busy.item {
+            width: 90vw;
+            margin: 0 auto;
+            margin-top: 20%;
+            display: block;
+            position: relative;
+            animation: hovering 4s ease infinite;
+         }
+
       }
    </style>
 
